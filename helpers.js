@@ -13,7 +13,7 @@ module.exports = {
         const floors = global.myHotel.floors;
         for (let floor = 0; floor < floors.length; floor++) {
             console.log(`                   Floor ${floor + 1}                 \n`);
-            console.log(`Power Consuption: ${floors[floor].powerConsumption} units / ${floors[floor].allowedPowerConsumption} units`);
+            console.log(`Power Consuption: ${floors[floor].powerConsumption} units / ${floors[floor].allowedPowerConsumption} units\n`);
             const corridors = floors[floor].corridors;
             for (let corridor = 0; corridor < corridors.length; corridor++) {
                 console.log(`Main corridor ${corridor + 1} Light  ${corridor + 1}: ${corridors[corridor].equipments['light'].on ? 'ON' : 'OFF'} AC : ${corridors[corridor].equipments['AC'].on ? 'ON' : 'OFF'}\n`);
