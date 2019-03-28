@@ -3,7 +3,7 @@ module.exports = {
         const query = { 'floor': -1, 'sub_corridor': -1 };
         for (let i = 0; i < queryTerms.length; i++) {
             const q = queryTerms[i].split('=');
-            query[q[0]] ? query[[q[0]]] = q[1] : '';
+            query[q[0]] ? query[q[0]] = q[1] : '';
         }
         return query
     },
